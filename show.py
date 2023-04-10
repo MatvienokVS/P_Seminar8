@@ -1,17 +1,20 @@
 # Просмотр телефонной книги
-telefon_book = []
 
 
 # def get_tb():
 #     return telefon_book
 
 
+# if __name__ == "__main__":
+telefon_book = []
+
+
 def show_all():
     file = 'telefon_book.csv'
     with open(file, 'r', encoding='utf-8') as data:
-        # data.readlines()
+        data.readlines()
         for i in data:
-            print(f'{i}')
+            print(i)
 
 
 show_all()

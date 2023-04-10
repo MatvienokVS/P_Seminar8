@@ -3,10 +3,10 @@
 
 import menu
 import show
-from add_contact import add_contact
+import contact
 
 if __name__ == "__main__":
-    menu.menu()
+
     enter = menu.menu()
     while True:
         match enter:

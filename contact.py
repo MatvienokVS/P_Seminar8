@@ -9,5 +9,4 @@ def add_contact(*args):
     with open(file, 'a', encoding='utf-8') as data:
         data.write(f'{name};{tel_number};{function}\n')
 
-
-add_contact()
+# add_contact()
