@@ -14,4 +14,5 @@ def menu() -> int:
         else:
             print('Введите верный пункт меню.')
 
-# menu()
+
+menu()
