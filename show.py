@@ -9,9 +9,8 @@ telefon_book = []
 def show_all():
     file = 'telefon_book.csv'
     with open(file, 'r', encoding='utf-8') as data:
-        # data.readlines()
+        data.readlines()
         for i in data:
-            print(f'{i}')
+            print(f'Имя {i}')
 
-
-show_all()
+# show_all()
