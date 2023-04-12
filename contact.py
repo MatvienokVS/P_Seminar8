@@ -1,7 +1,7 @@
 # Добавление контакта
 
 
-def add_contact(*args):
+def add_contact():
     name = input('Ввведите ФИО: ')
     tel_number = input('Введите номер телефона: ')
     function = input('Введите должность: ')

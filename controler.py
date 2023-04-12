@@ -1,5 +1,8 @@
 import menu
-import show
+import model
+
+
+# import contact
 
 
 def start():
@@ -7,14 +10,16 @@ def start():
         enter = menu.menu()
         match enter:
             case 1:
-                pass
+                model.load_file()
             case 2:
-                pass
+                contact = menu.new_contact()
+                model.add_contact(contact)
             case 3:
-                pass
+                pb = model.get_tb()
+                menu.show_cont(pb, 'привет')
             case 4:
                 pass
             case 5:
-                show.show_all()
+                menu.show_cont()
             case 6:
                 pass

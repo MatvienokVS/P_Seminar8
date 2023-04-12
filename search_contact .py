@@ -1,4 +1,4 @@
-from show import show_all
+from model import show_all
 
 
 def search_cont():
