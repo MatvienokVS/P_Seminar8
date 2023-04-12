@@ -18,5 +18,3 @@ def start():
                 show.show_all()
             case 6:
                 pass
-
-    print(enter)

@@ -11,6 +11,7 @@ def menu() -> int:
         enter = input('Выберите пункт меню: ')
         if enter.isdigit() and 0 < int(enter) < 7:
             return int(enter)
+            print(enter)
         else:
             print('Введите верный пункт меню.')
 
