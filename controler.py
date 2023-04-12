@@ -1,25 +1,23 @@
-import menu
+import view
 import model
-
-
-# import contact
 
 
 def start():
     while True:
-        enter = menu.menu()
+        enter = view.menu()
         match enter:
             case 1:
                 model.load_file()
+                view.print_inf('Книга загружена')
             case 2:
-                contact = menu.new_contact()
-                model.add_contact(contact)
+                model.save_file()
             case 3:
                 pb = model.get_tb()
-                menu.show_cont(pb, 'привет')
+                view.show_cont(pb, 'Привет')
             case 4:
-                pass
+                contact = view.new_contact()
+                model.add_contact(contact)
             case 5:
-                menu.show_cont()
+                pass
             case 6:
                 pass
